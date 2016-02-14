@@ -21,7 +21,7 @@ pages:
   Blog: '/blog/'
   Archiv: '/archiv/'
   OStranke: '/ostranke/'
-  RSS: '/atom.xml	
+  RSS: '/atom.xml'
 
 # Custom 
 google_analytics_key: UA-XXXXXXX-X
