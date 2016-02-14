@@ -1,9 +1,9 @@
 ---
 layout: blogposts
-title: Archív
+title: ArchÃ­v
 ---
 
-# Archív
+# ArchÃ­v
 
 {% for post in site.posts %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})

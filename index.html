@@ -1,6 +1,6 @@
 ---
 layout: blogposts
-title: Vitajte na mojej stránke
+title: Vitajte na mojej strÃ¡nke
 ---
 
 <div class="posts">
@@ -21,17 +21,17 @@ title: Vitajte na mojej stránke
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}/">Staršie</a>
+    <a class="pagination-item older" href="/page{{paginator.next_page}}/">StarÅ¡ie</a>
   {% else %}
-    <span class="pagination-item older">Staršie</span>
+    <span class="pagination-item older">StarÅ¡ie</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Staršie</a>
+      <a class="pagination-item newer" href="/">StarÅ¡ie</a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}/">Staršie</a>
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}/">StarÅ¡ie</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Novšie</span>
+    <span class="pagination-item newer">NovÅ¡ie</span>
   {% endif %}
 </div>
