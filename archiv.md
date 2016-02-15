@@ -1,5 +1,5 @@
 ---
-layout: blogposts
+layout: blog
 title: Archív
 ---
 

@@ -10,21 +10,20 @@ permalink: /archive/:year/:month/:day/:title
 
 timezone: Europe/Bratislava
 
-paginate: 15
-paginate_path: "/archive/page:num/"
+paginate: 5
 
-safe: true
+#safe: true
 lsi: false
 exclude: [.gitignore, CNAME, Dockerfile, README.md]
 
 static_pages: 
-  Blog: '/blog/'
-  Archiv: '/archiv/'
-  OStranke: '/ostranke/'
-  RSS: '/atom.xml'
+  Blog: '/'
+  Archív: '/archiv/'
+  O stránke: '/ostranke/'
+  RSS: '/feed.xml'
 
 # Custom 
 google_analytics_key: UA-XXXXXXX-X
 
-gems:
- - jekyll-paginate
+gems: [jekyll-paginate]
+ 

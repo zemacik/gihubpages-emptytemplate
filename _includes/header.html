@@ -1,6 +1,6 @@
-﻿<!-- Header -->
+<!-- Header -->
 <header class="navbar navbar-inverse">
-  <div class="container">
+  <div class="container"> 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -14,7 +14,7 @@
     <div class="collapse navbar-collapse header-collapse">
       <ul class="nav navbar-nav">
           {% for page in site.static_pages %}
-	      <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
+        <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
           {% endfor %}
       </ul>
     </div>
