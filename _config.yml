@@ -18,8 +18,8 @@ exclude: [.gitignore, CNAME, Dockerfile, README.md]
 
 static_pages: 
   Blog: '/'
-  Archív: '/archiv/'
-  O stránke: '/ostranke/'
+  Archív: '/archiv'
+  O stránke: '/ostranke'
   RSS: '/feed.xml'
 
 # Custom 
