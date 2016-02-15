@@ -1,37 +1,34 @@
----
-layout: blogposts
-title: Vitajte na mojej stránke
+--- 
+layout: blogposts 
+title: Vitajte na mojej stránke 
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
+    {% for post in paginator.posts %}
+    <div class="post">
+        <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
+        <span class="post-date">{{ post.date | date_to_string }}</span> 
+        {{ post.content }}
+    </div>
+    {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}/">Staršie</a>
-  {% else %}
-    <span class="pagination-item older">Staršie</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Staršie</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}/">Staršie</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Novšie</span>
-  {% endif %}
-</div>
+<nav>
+    <ul class="pager">
+        {% if paginator.next_page %}
+          <li class="previous"><a href="/page{{paginator.next_page}}/"><span aria-hidden="true">&larr;</span> Staršie</a></li>
+        {% else %}
+          <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Staršie</a></li>
+        {% endif %}
+         
+        {% if paginator.previous_page %}
+          <li class="next"><a href="/page{{paginator.previous_page}}/">Novšie <span aria-hidden="true">&rarr;</span></a></li>
+        {% else %}
+          <li class="next disabled"><a href="#">Novšie <span aria-hidden="true">&rarr;</span></a></li>
+        {% endif %}
+    </ul>
+</nav>

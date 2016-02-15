@@ -17,7 +17,7 @@ safe: true
 lsi: false
 exclude: [.gitignore, CNAME, Dockerfile, README.md]
 
-pages: 
+static_pages: 
   Blog: '/blog/'
   Archiv: '/archiv/'
   OStranke: '/ostranke/'
